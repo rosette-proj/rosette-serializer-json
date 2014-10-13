@@ -21,7 +21,7 @@ module Rosette
         stream.flush
       end
 
-      def default_extension
+      def self.default_extension
         '.json'
       end
 
