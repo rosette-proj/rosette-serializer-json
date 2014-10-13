@@ -30,9 +30,10 @@ module Rosette
           writer.write_object
         end
 
-        def write_translation(trans)
-          key = trans.phrase.index_value
-          writer.write_key_value(key, trans.translation)
+        def write_key_value(key, value)
+          writer.write_key_value(
+            key.encode(encoding), value.encode(encoding)
+          )
         end
       end
     end
