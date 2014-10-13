@@ -16,8 +16,13 @@ module Rosette
         after_initialize
       end
 
-      def close
-        writer.close
+      def flush
+        writer.flush
+        stream.flush
+      end
+
+      def default_extension
+        '.json'
       end
 
       class KeyValueSerializer < JsonSerializer
