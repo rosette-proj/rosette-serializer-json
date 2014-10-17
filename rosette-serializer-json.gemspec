@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
 
   s.description = s.summary = "A streaming JSON serializer for the Rosette internationalization platform."
 
-  s.add_dependency 'json-write-stream', '~> 1.0.1'
+  s.add_dependency 'json-write-stream', '~> 1.0.2'
 
   s.platform = Gem::Platform::RUBY
   s.has_rdoc = true
