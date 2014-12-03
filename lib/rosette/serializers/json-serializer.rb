@@ -7,13 +7,11 @@ module Rosette
   module Serializers
 
     class JsonSerializer < Serializer
-      attr_reader :stream, :writer, :encoding
+      attr_reader :writer
 
-      def initialize(stream, encoding = Encoding::UTF_8)
-        @stream = stream
-        @encoding = encoding
+      def initialize(stream, locale, encoding = Encoding::UTF_8)
+        super
         @writer = JsonWriteStream.from_stream(stream, encoding)
-        after_initialize
       end
 
       def flush
@@ -26,7 +24,8 @@ module Rosette
       end
 
       class KeyValueSerializer < JsonSerializer
-        def after_initialize
+        def initialize(stream, locale, encoding = Encoding::UTF_8)
+          super
           writer.write_object
         end
 
