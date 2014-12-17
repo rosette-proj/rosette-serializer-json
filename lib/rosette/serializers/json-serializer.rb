@@ -14,6 +14,10 @@ module Rosette
         @writer = JsonWriteStream.from_stream(stream, encoding)
       end
 
+      def write_raw(text)
+        writer.stream.write(text)
+      end
+
       def flush
         writer.flush
         stream.flush
