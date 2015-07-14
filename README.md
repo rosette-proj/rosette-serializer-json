@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/rosette-proj/rosette-serializer-json.svg)](https://travis-ci.org/rosette-proj/rosette-serializer-json) [![Code Climate](https://codeclimate.com/github/rosette-proj/rosette-serializer-json/badges/gpa.svg)](https://codeclimate.com/github/rosette-proj/rosette-serializer-json) [![Test Coverage](https://codeclimate.com/github/rosette-proj/rosette-serializer-json/badges/coverage.svg)](https://codeclimate.com/github/rosette-proj/rosette-serializer-json/coverage)
+
 rosette-serializer-json
 ====================
 
